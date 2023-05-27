@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrida Le Wagon</title>
+  <link rel="icon" href="Images/Initials.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <h1 class="text-center">🏎️Corrida Le Wagon🏎️</h1>
+  </div>
+  <hr>
+  <table class="racer-table">
+    <tr id="player1-race">
+      <td class="active"></td>
+      <td><img src="Images/Start.jpg" height="80px" width="80px"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="finish"></td>
+    </tr>
+    <tr id="player2-race">
+      <td class="active"></td>
+      <td><img src="Images/Start.jpg" height="80px" width="80px"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="finish"></td>
+    </tr>
+    <tr id="player3-race">
+      <td class="active"> </td>
+      <td><img src="Images/Start.jpg" height="80px" width="80px"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="finish"></td>
+    </tr>
+    <tr id="player4-race">
+      <td class="active"> </td>
+      <td><img src="Images/Start.jpg" height="80px" width="80px"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="finish"></td>
+    </tr>
+    </table>
+    <button id="refreshButton">Press to Start</button>
+
+    <script src="script.js"></script>
+</body>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+    .racer-table {
+      margin: 10vh auto 0;
+    }
+
+    .racer-table td {
+      height: 80px;
+      width: 80px;
+      border: 1px solid whitesmoke;
+    }
+
+    .racer-table td.active {
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: center;
+    }
+
+    #player1-race td.start {
+      background-image:  url(images/Start.jpg);
+    }
+
+    #player1-race td.active {
+      background-image:  url(images/Player01.jpeg);
+    }
+
+    #player2-race td.active {
+      background-image: url(Images/Player02.jpg);
+    }
+    #player3-race td.active {
+      background-image: url(Images/Player03.jpg);
+
+    } #player4-race td.active {
+      background-image: url(Images/player04.jpg);
+    }
+
+    td:last-child {
+      background-image: url(Images/finish.png);
+      background-size: cover;
+    }
+
+    td:last-child.active {
+      background-size: 90%, cover;
+      background-position: center, top left;
+    }
+
+    #player1-race td:last-child.active {
+      background-image: url(Images/Player01.jpeg), url(Images/finish.png);
+    }
+
+    #player2-race td:last-child.active {
+      background-image: url(Images/Player02.jpg), url(Images/finish.png);
+    }
+
+    #player3-race td:last-child.active {
+      background-image: url(Images/Player03.jpeg), url(Images/finish.png);
+    }
+    #player4-race td:last-child.active {
+      background-image: url(Images/player04.jpg), url(Images/finish.png);
+    }
+  </style>
+  </body>
+</html>

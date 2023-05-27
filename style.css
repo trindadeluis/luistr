@@ -1,0 +1,328 @@
+   /* Global styles */
+   * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  /* Header styles */
+  #mainHeader {
+    background-color: #82EAFF;
+    padding: 0.5em;
+    overflow: auto;
+  }
+  
+  #responsiveLogo {
+    width: 100%;
+  }
+  
+  #responsiveLogo img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  /* Navigation styles */
+  nav {
+    float: left;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    background-color: green;
+    border: thin solid #fff;
+    color: #fff;
+    display: block;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  nav ul li a:hover {
+    background-color: yellow;
+    color: #000;
+  }
+  
+  /* Middle section styles */
+  #mainSection {
+    background-color: #D9F8F2;
+    float: left;
+    width: 96%;
+    overflow: auto;
+    padding: 2%;
+  }
+  
+  #sideBox1 {
+    background-color: #C9A449;
+    width: 96%;
+    overflow: auto;
+    padding: 2%;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: orange;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Media queries */
+  @media only screen and (min-width: 480px) {
+    /* CSS for devices with a minimum width of 480 pixels */
+    #mainHeader {
+      background-color: #EFEF34;
+    }
+    
+    nav ul li {
+      float: left;
+      width: 25%;
+    }
+    
+    h1 {
+      margin-left: 10px;
+    }
+    
+    .future,
+    .about,
+    .game {
+      margin-left: 10px;
+    }
+    
+    p {
+      margin-right: 10px;
+    }
+    
+    ul {
+      top: 400px;
+      right: 50px;
+    }
+    
+    .F1 {
+      margin-right: 200px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* CSS for devices with a minimum width of 768 pixels */
+    #mainHeader {
+      background-color: #EDD49A;
+    }
+    
+    #mainSection {
+      float: left;
+      width: 61%;
+    }
+    
+    #sideBox1 {
+      float: right;
+      width: 30%;
+    }
+  }
+  
+  @media only screen and (min-width: 1140px) {
+    /* CSS for devices with a minimum width of 1140 pixels */
+    #mainHeader {
+      background-color: #CE9429;
+    }
+    
+    #responsiveLogo {
+      float: left;
+      width: 30%;
+    }
+    
+    nav {
+      float: left;
+      width: 70%;
+    }
+    
+    nav ul {
+      margin: 1.5em 0 0 0;
+    }
+  }
+  
+  /* Arrow styles */
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    padding-bottom: 30px; /* Add padding at the bottom of the content */
+  }
+  
+  #arrow {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s; /* Add a transition effect for opacity */
+    opacity: 1; /* Set initial opacity to 1 (visible) */
+  }
+  
+  #arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  
+  #arrow:hover {
+    background-color: grey;
+  }
+
+   /*Header Text*/
+  h1 {
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 120px;
+    padding-top: 45px;
+    margin-top: 15px;
+  }
+  
+  .future
+  {
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 45px;
+    margin-top: 15px;
+  }
+  .about
+    {
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 45px;
+    margin-top: 15px;
+  }
+    .game {
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    padding-top: 45px;
+    margin-top: 15px;
+  }
+  
+  .profile {
+    text-align: right;
+    font-family: 'Lucida Grande', sans-serif;
+    color:black;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .project {
+      text-align: right;
+      font-family: 'Lucida Grande', sans-serif;
+      color:black;
+      font-weight: bold;
+      margin-left: 10px;
+  
+  }
+  
+  p {
+    margin-right: 10px;
+    text-align: right;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lucida Grande', sans-serif;
+    padding: 10px;
+  }
+  
+  p a {
+    font-size: 15px;
+  }
+  
+  span {
+    color: blue;
+  }
+
+  
+  ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 550px;
+    right: 150px;
+  }
+    
+  li {
+    margin-right: 10px;
+  }
+  
+  ul li a:hover {
+    color: black;
+  }
+  
+  .F1 {
+    margin-top: -85;
+    margin-left: auto; /* Move to the right of the page */
+    text-align: center;
+    font-family: Agency FB;
+    background-color: whitesmoke;
+    color: red;
+    font-size: 30px;
+    border-radius: 20px; /* Creates a capsule shape */
+    width: 150px; /* Adjust the width value for the desired size */
+    height: 40px; /* Adjust the height value for the desired size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 9px 10px 15px
+  }
+  .botao {
+    margin-top: -85; /* Move to the top of the page */
+    margin-left: 570; /* Move to the right of the page */
+    font-family: Agency FB;
+    text-align: center;
+    background-color: silver;
+    color: blue;
+    font-size: 20px;
+    border-radius: 20px; /* Creates a capsule shape */
+    width: 150px; /* Adjust the width value for the desired size */
+    height: 40px; /* Adjust the height value for the desired size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 9px 10px 15px;
+  }
+  .botao:hover {
+    background-color: cadetblue;
+  }
+  
